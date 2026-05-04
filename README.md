@@ -8,6 +8,20 @@ One command to copy any Arduino code to your clipboard.
 curl -sL https://tinyurl.com/getarduino | bash -s CODE_NAME
 ```
 
+### PowerShell
+
+If you are using PowerShell locally from this repo, run:
+
+```powershell
+.\getcode.ps1 -Name blink
+```
+
+If you want to fetch a sketch from the published raw URL in PowerShell, use:
+
+```powershell
+irm https://raw.githubusercontent.com/ankushgarg44/arduino-codes/main/getcode.ps1 | iex
+```
+
 ### Examples
 
 ```bash

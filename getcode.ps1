@@ -27,7 +27,7 @@ $FileMap = @{
 
 # Show list if no argument given
 if (-not $Name) {
-    Write-Host "Usage: getcode <name>" -ForegroundColor Yellow
+    Write-Host "Usage: .\getcode.ps1 -Name <name>" -ForegroundColor Yellow
     Write-Host ""
     Write-Host "Available codes:" -ForegroundColor Cyan
     $FileMap.Keys | Sort-Object | ForEach-Object { Write-Host "  $_" }

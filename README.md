@@ -10,16 +10,18 @@ curl -sL https://tinyurl.com/getarduino | bash -s CODE_NAME
 
 ### PowerShell
 
-If you are using PowerShell locally from this repo, run:
+If you want to run the published script directly from the raw file URL, use:
+
+```powershell
+& ([scriptblock]::Create((irm https://tinyurl.com/txkmrxrp))) -Name blink
+```
+
+Replace `blink` with any available code name such as `ldr`, `servo`, or `oled`.
+
+If you already have the file in this repo, you can also run it locally:
 
 ```powershell
 .\getcode.ps1 -Name blink
-```
-
-If you want to fetch a sketch from the published raw URL in PowerShell, use:
-
-```powershell
-irm https://raw.githubusercontent.com/ankushgarg44/arduino-codes/main/getcode.ps1 | iex
 ```
 
 ### Examples

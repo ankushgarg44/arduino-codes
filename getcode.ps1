@@ -8,21 +8,18 @@ param(
 $Repo = "https://raw.githubusercontent.com/ankushgarg44/arduino-codes/main"
 
 $FileMap = @{
+    "assistant"   = "assistant.ino"
+    "bluetoothled" = "bluetoothled.ino"
+    "blynk"      = "blynk.ino"
+    "blynkdht11i" = "blynkdht11i.ino"
+    "dht"        = "dht.ino"
+    "dhtled"     = "dhtled.ino"
+    "hc05dht11"  = "hc05dht11.ino"
     "ldr"        = "ldr.ino"
-    "temp"       = "temp.ino"
-    "motor"      = "motor.ino"
-    "servo"      = "servo.ino"
-    "blink"      = "blink.ino"
-    "ultrasonic" = "ultrasonic.ino"
-    "pir"        = "pir.ino"
-    "bluetooth"  = "bluetooth.ino"
+    "ldrled"     = "ldrled.ino"
+    "led"        = "led.ino"
+    "pushbutton" = "pushbutton.ino"
     "wifi"       = "wifi.ino"
-    "oled"       = "oled.ino"
-    "keypad"     = "keypad.ino"
-    "rfid"       = "rfid.ino"
-    "joystick"   = "joystick.ino"
-    "relay"      = "relay.ino"
-    "buzzer"     = "buzzer.ino"
 }
 
 # Show list if no argument given

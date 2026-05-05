@@ -8,27 +8,24 @@ REPO="https://raw.githubusercontent.com/ankushgarg44/arduino-codes/main"
 
 # Map short names to .ino files
 case "$1" in
+  assistant)   FILE="assistant.ino" ;;
+  bluetoothled) FILE="bluetoothled.ino" ;;
+  blynk)       FILE="blynk.ino" ;;
+  blynkdht11) FILE="blynkdht11.ino" ;;
+  dht)         FILE="dht.ino" ;;
+  dhtled)      FILE="dhtled.ino" ;;
+  hc05dht11)   FILE="hc05dht11.ino" ;;
   ldr)         FILE="ldr.ino" ;;
-  temp)        FILE="temp.ino" ;;
-  motor)       FILE="motor.ino" ;;
-  servo)       FILE="servo.ino" ;;
-  blink)       FILE="blink.ino" ;;
-  ultrasonic)  FILE="ultrasonic.ino" ;;
-  pir)         FILE="pir.ino" ;;
-  bluetooth)   FILE="bluetooth.ino" ;;
+  ldrled)      FILE="ldrled.ino" ;;
+  led)         FILE="led.ino" ;;
+  pushbutton)  FILE="pushbutton.ino" ;;
   wifi)        FILE="wifi.ino" ;;
-  oled)        FILE="oled.ino" ;;
-  keypad)      FILE="keypad.ino" ;;
-  rfid)        FILE="rfid.ino" ;;
-  joystick)    FILE="joystick.ino" ;;
-  relay)       FILE="relay.ino" ;;
-  buzzer)      FILE="buzzer.ino" ;;
   *)
     echo "❌ Unknown code: $1"
     echo ""
     echo "Available codes:"
-    echo "  ldr, temp, motor, servo, blink, ultrasonic, pir, bluetooth,"
-    echo "  wifi, oled, keypad, rfid, joystick, relay, buzzer"
+    echo "  assistant, bluetoothled, blynk, blynkdht11i, dht, dhtled,"
+    echo "  hc05dht11, ldr, ldrled, led, pushbutton, wifi"
     exit 1
     ;;
 esac

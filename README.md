@@ -27,30 +27,27 @@ If you already have the file in this repo, you can also run it locally:
 ### Examples
 
 ```bash
-curl -sL https://tinyurl.com/getarduino | bash -s ldr
-curl -sL https://tinyurl.com/getarduino | bash -s servo
-curl -sL https://tinyurl.com/getarduino | bash -s temp
+curl -sL https://tinyurl.com/getarduino | bash -s led
+curl -sL https://tinyurl.com/getarduino | bash -s blynk
+curl -sL https://tinyurl.com/getarduino | bash -s dht
 ```
 
 ## Available Codes
 
 | Code | Description |
 |------|-------------|
-| `ldr` | LDR sensor with 3 LEDs |
-| `temp` | DHT11 temperature & humidity |
-| `motor` | DC motor with L298N driver |
-| `servo` | Servo motor sweep |
-| `blink` | Basic LED blink |
-| `ultrasonic` | HC-SR04 distance sensor |
-| `pir` | PIR motion sensor |
-| `bluetooth` | HC-05/06 Bluetooth module |
-| `wifi` | ESP8266 WiFi module |
-| `oled` | SSD1306 OLED display |
-| `keypad` | 4x4 matrix keypad |
-| `rfid` | RC522 RFID reader |
-| `joystick` | Analog joystick module |
-| `relay` | Relay module control |
-| `buzzer` | Passive buzzer melody |
+| `assistant` | Assistant module |
+| `bluetoothled` | Bluetooth with LED control |
+| `blynk` | Blynk IoT integration |
+| `blynkdht11i` | Blynk with DHT11 sensor |
+| `dht` | DHT temperature & humidity sensor |
+| `dhtled` | DHT with LED indicator |
+| `hc05dht11` | HC-05 Bluetooth with DHT11 |
+| `ldr` | LDR light sensor |
+| `ldrled` | LDR with LED control |
+| `led` | Basic LED control |
+| `pushbutton` | Push button input |
+| `wifi` | WiFi connectivity |
 
 ## Setup (for repo owner)
 
